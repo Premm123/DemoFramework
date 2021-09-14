@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Techigai Java Framework]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.Demo.Listener.Reporter"/>
+  </listeners>
+  <test thread-count="5" name="GO Daddy SIte(failed)">
+    <parameter name="sUrl" value="https://www.godaddy.com/"/>
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="TestCases.TS_GoDaddy">
+        <methods>
+          <include name="SetBrowserAndNavigateToUrl1"/>
+          <include name="closeBrowser"/>
+          <include name="testCase1"/>
+        </methods>
+      </class> <!-- TestCases.TS_GoDaddy -->
+    </classes>
+  </test> <!-- GO Daddy SIte(failed) -->
+  <test thread-count="5" name="Amazon Site(failed)">
+    <parameter name="sUrl" value="http://www.amazon.in"/>
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="TestCases.TS_Amazon">
+        <methods>
+          <include name="SetBrowserAndNavigateToUrl1"/>
+          <include name="closeBrowser"/>
+          <include name="testcase2"/>
+        </methods>
+      </class> <!-- TestCases.TS_Amazon -->
+    </classes>
+  </test> <!-- Amazon Site(failed) -->
+</suite> <!-- Failed suite [Techigai Java Framework] -->

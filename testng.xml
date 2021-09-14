@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Techigai Java Framework">
+<listeners>
+<!--  <listener class-name="com.Demo.Listener.Reporter"/> -->
+<listener class-name="com.Demo.Listener.ExtentReporterNG"/>
+
+</listeners>
+
+  <test  name="GO Daddy SIte">
+   <parameter name="browserType"  value="chrome"/>
+   <parameter name="sUrl"  value="https://www.godaddy.com/"/>
+  	<classes>
+		<class name="TestCases.TS_GoDaddy"/>
+	</classes>
+  </test>
+   
+    <test  name="Amazon Site">
+  	
+   <parameter name="browserType"  value="chrome"/>
+   <parameter name="sUrl"  value="http://www.amazon.in"/>
+   
+  	<classes>
+		<class name="TestCases.TS_Amazon"/>
+	</classes>
+	
+  </test> 
+ <!--   <test  name="Herokuapp">
+  	
+   <parameter name="browserType"  value="chrome"/>
+   <parameter name="sUrl"  value="https://the-internet.herokuapp.com/"/>
+   
+  	<classes>
+	   	<class name="TestCases.TS_Herokuapp_Dropdown"/>
+		<class name="TestCases.TS_Herokuapp_DynamicControls"/>
+		<class name="TestCases.TS_Herokuapp_FormAuthentication"/>    
+		<class name="TestCases.TS_Herokuapp_JSAlerts"/>   
+		<class name="TestCases.TS_Herokuapp_Hovers"/>	
+		<class name="TestCases.TS_Herokuapp_EntryAd"/>	
+		<class name="TestCases.TS_Herokuapp_FileUplaodDownlaodAndFrames"/>	
+		
+		
+	</classes>
+  </test> -->
+   
+</suite> 
